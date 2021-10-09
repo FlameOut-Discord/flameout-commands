@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+  <title>FlameOut Commands</title>
+
+  <meta name="description" content="Команды бота FlameOut" />
+
+  <meta name="theme-color" content="#f39c12">
+  <meta property="og:title" content="FlameOut"/>
+  <meta property="og:site_name" content="Официальный сайт бота FlameOut"/>
+  <meta property="og:description" content="Команды бота FlameOut"/>
+  <meta name="keywords" content="Попыт, попит, симпл димпл, Discord, bot, site, flameout, flame, spotify, faq, soundcloud, music, youtube, clear messages, дискорд, бот, сайт, флейм, флеймаут, саундклауд, ютуб, музыка, спотифи, спотифай, очистка сообщений, множество возможностей, slowmode, слоумод, медленный режим, кастомный префикс, custom prefix, custom language, кастомный язык, minecraft, статистика vimeworld, статистика хайпиксель, редгуй, redguy, online, онлайн, игра змейка, snake game, ваймворлд, hypixel, stats, info of minecraft server, информация о майнкрафт сервере, статистика, bans, kicks, баны, кики, многофункциональный, полезное, fun, веселье, profile, server, сервер, animals, картинки животных">
+  <meta property="og:image" content="https://flameout.gq/f/p/icon.png"/>
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/">
+
+  <link rel='stylesheet' href='/files/css/site.css'>
+  <link rel='stylesheet' href='/files/css/spoilers.css'>
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/solid.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css'>
+
+  <script type="text/javascript" defer>
+    let newTitle = "FlameOut — все команды";
+    if (document.title != newTitle) {
+      document.title = newTitle;
+      console.log("Title changed.");
+    }
+  </script>
+
+  <link rel="icon" type="image/x-icon" href="/f/p/icon.png">
+</head>
+
+<body>
+    <details>
+        <summary>Экономика</summary>
+        <div class="commands-category-money"></div>
+    </details>
+
+    <details>
+        <summary>Развлекательные</summary>
+        <div class="commands-category-fun"></div>
+    </details>
+
+    <details>
+        <summary>NSFW</summary>
+        <div class="commands-category-nsfw"></div>
+    </details>
+
+    <details>
+        <summary>Minecraft</summary>
+        <div class="commands-category-minecraft"></div>
+    </details>
+
+    <details>
+        <summary>Информация</summary>
+        <div class="commands-category-info"></div>
+    </details>
+
+    <details>
+        <summary>Бот</summary>
+        <div class="commands-category-bot"></div>
+    </details>
+
+    <details>
+        <summary>Административные</summary>
+        <div class="commands-category-admin"></div>
+    </details>
+
+    <details>
+        <summary>Фотофильтры</summary>
+        <div class="commands-category-photo"></div>
+    </details>
+
+    <details>
+        <summary>ВКонтакте</summary>
+        <div class="commands-category-vk"></div>
+    </details>
+
+    <details>
+        <summary>YouTube</summary>
+        <div class="commands-category-youtube"></div>
+    </details>
+    
+    <details>
+        <summary>Другое</summary>
+        <div class="commands-category-other"></div>
+    </details>
+
+  <script type="module">
+    const copyToClipboard = message => {
+      const textArea = document.createElement("textarea")
+      textArea.value = message
+      textArea.style.opacity = "0"
+      document.body.appendChild(textArea)
+      textArea.focus()
+      textArea.select()
+
+      try {
+        const successful = document.execCommand('copy')
+        const msg = successful ? 'successful' : 'unsuccessful'
+        console.log('Copying to clipboard was successful!')
+      } catch (e) {
+        console.error('Error while copying to clipboard:', e)
+      }
+
+      document.body.removeChild(textArea)
+    }
+    
+    const prefix = 'f!';
+    console.log('Префикс: '+ prefix)
+
+    const commands = [
+      { name: `${prefix}msnuseat `, blocked: false, argument: ['количество'], category: 'money', description: 'Скушать несколько снюса за раз' },
+      { name: `${prefix}gifttobox`, blocked: false, argument: ['-'], category: 'money', description: 'Обменять подарки на боксы' },
+      { name: `${prefix}robsnus`, blocked: false, argument: ['@вампус#0001'], category: 'money', description: 'Своровать снюс' },
+      { name: `${prefix}paysnus`, blocked: false, argument: ['@вампус#0001'], category: 'money', description: 'Подарить снюс' },
+      { name: `${prefix}snuseat`, blocked: false, argument: ['-'], category: 'money', description: 'Скушать снюс' },
+      { name: `${prefix}rankcard`, blocked: false, argument: ['@вампус#0001 | cbg'], category: 'money', description: 'Ваша ранг-карта' },
+      { name: `${prefix}mopenbox`, blocked: false, argument: ['5'], category: 'money', description: 'Открыть несколько боксов за раз' },
+      { name: `${prefix}openbox`, blocked: false, argument: ['-'], category: 'money', description: 'Открыть бокс' },
+      { name: `${prefix}woodsell`, blocked: false, argument: ['-'], category: 'money', description: 'Продать дерево' },
+      { name: `${prefix}cointree`, blocked: false, argument: ['-'], category: 'money', description: 'Денежное дерево' },
+      { name: `${prefix}event`, blocked: false, argument: ['-'], category: 'money', description: 'Бесплатные ресурсы' },
+      { name: `${prefix}leaders`, blocked: false, argument: ['ресурс'], category: 'money', description: 'Список лидеров по предметам' },
+      { name: `${prefix}bitcoin`, blocked: false, argument: ['-'], category: 'money', description: 'Биткоин' },
+      { name: `${prefix}paybitcoin`, blocked: false, argument: ['@вампус#0001'], category: 'money', description: 'Передать биткоин' },
+      { name: `${prefix}bitcoinsell`, blocked: false, argument: ['-'], category: 'money', description: 'Продать биткоин' },
+      { name: `${prefix}rob`, blocked: false, argument: ['@вампус#0001'], category: 'money', description: 'Грабить' },
+      { name: `${prefix}minesell`, blocked: false, argument: ['-'], category: 'money', description: 'Продать ресурсы с шахты' },
+      { name: `${prefix}mine`, blocked: false, argument: ['-'], category: 'money', description: 'Шахта' },
+      { name: `${prefix}school`, blocked: false, argument: ['-'], category: 'money', description: 'Школа' },
+      { name: `${prefix}jobs`, blocked: false, argument: ['-'], category: 'money', description: 'Работы' },
+      { name: `${prefix}janitor`, blocked: false, argument: ['-'], category: 'money', description: 'Дворник' },
+      { name: `${prefix}bank`, blocked: false, argument: ['d | w'], category: 'money', description: 'Ваш банк' },
+      { name: `${prefix}wood`, blocked: false, argument: ['-'], category: 'money', description: 'Рубить дерево' },
+      { name: `${prefix}snake`, blocked: false, argument: ['-'], category: 'money', description: 'Игра "Змейка"' },
+      { name: `${prefix}shop`, blocked: false, argument: ['buy'], category: 'money', description: 'Магазин' },
+      { name: `${prefix}cube`, blocked: false, argument: ['-'], category: 'money', description: 'Кубик' },
+      { name: `${prefix}fish`, blocked: false, argument: ['-'], category: 'money', description: 'Ловить рыбу' },
+      { name: `${prefix}fishsell`, blocked: false, argument: ['-'], category: 'money', description: 'Продать рыбу' },
+      { name: `${prefix}leafsell`, blocked: false, argument: ['-'], category: 'money', description: 'Продать листики' },
+      { name: `${prefix}bankhack`, blocked: false, argument: ['@вампус#0001'], category: 'money', description: 'Взломать банк' },
+      { name: `${prefix}profile`, blocked: false, argument: ['@вампус#0001'], category: 'money', description: 'Профиль' },
+      { name: `${prefix}resourceprofile`, blocked: false, argument: ['@вампус#0001'], category: 'money', description: 'Профиль ресурсов' },
+      { name: `${prefix}gift`, blocked: false, argument: ['-'], category: 'money', description: 'Открыть подарок' },
+      { name: `${prefix}mgift`, blocked: false, argument: ['19'], category: 'money', description: 'Открыть несколько подарков за раз' },
+
+      { name: `${prefix}pressf `, blocked: false, argument: ['@вампус#0001'], category: 'fun', description: 'Press f to pay respects!' },
+      { name: `${prefix}lizard`, blocked: false, argument: ['-'], category: 'fun', description: 'Фотография змеи' },
+      { name: `${prefix}bunny`, blocked: false, argument: ['-'], category: 'fun', description: 'Фотография зайца' },
+      { name: `${prefix}duck`, blocked: false, argument: ['-'], category: 'fun', description: 'Фотография утки' },
+      { name: `${prefix}choose `, blocked: false, argument: ['1-ый', ' 2-ой вариант'], category: 'fun', description: 'Бот выберет случайный вариант' },
+      { name: `${prefix}coinflip `, blocked: false, argument: ['орёл или решка'], category: 'fun', description: 'Подбросить монетку' },
+      { name: `${prefix}cat`, blocked: false, argument: ['-'], category: 'fun', description: 'Фотография кошки' },
+      { name: `${prefix}singing`, blocked: false, argument: ['-'], category: 'fun', description: 'Петь' },
+      { name: `${prefix}dance`, blocked: false, argument: ['-'], category: 'fun', description: 'Танцевать' },
+      { name: `${prefix}thinks`, blocked: false, argument: ['-'], category: 'fun', description: 'Думать' },
+      { name: `${prefix}hungry`, blocked: false, argument: ['-'], category: 'fun', description: 'Хочется кушать' },
+      { name: `${prefix}sad`, blocked: false, argument: ['-'], category: 'fun', description: 'Грустить' },
+      { name: `${prefix}sleep`, blocked: false, argument: ['-'], category: 'fun', description: 'Спать' },
+      { name: `${prefix}hit `, blocked: false, argument: ['@вампус#0001'], category: 'fun', description: 'Ударить пользователя' },
+      { name: `${prefix}hug `, blocked: false, argument: ['@вампус#0001'], category: 'fun', description: 'Обнять пользователя' },
+      { name: `${prefix}kiss `, blocked: false, argument: ['@вампус#0001'], category: 'fun', description: 'Поцеловать пользователя' },
+      { name: `${prefix}8ball `, blocked: false, argument: ['я <...>?'], category: 'fun', description: 'Задать вопрос шару' },
+      { name: `${prefix}bird`, blocked: false, argument: ['-'], category: 'fun', description: 'Фотография птицы' },
+      { name: `${prefix}panda`, blocked: false, argument: ['-'], category: 'fun', description: 'Фотография панды' },
+      { name: `${prefix}redpanda`, blocked: false, argument: ['-'], category: 'fun', description: 'Фотография красной панды' },
+      { name: `${prefix}fox`, blocked: false, argument: ['-'], category: 'fun', description: 'Фотография лисы' },
+      { name: `${prefix}koala`, blocked: false, argument: ['-'], category: 'fun', description: 'Фотография коалы' },
+      { name: `${prefix}dog`, blocked: false, argument: ['-'], category: 'fun', description: 'Собака' },
+      { name: `${prefix}quote`, blocked: false, argument: ['-'], category: 'fun', description: 'Случайная цитата' },
+      { name: `${prefix}waiting`, blocked: false, argument: ['-'], category: 'fun', description: 'Ждать' },
+      { name: `${prefix}eat`, blocked: false, argument: ['-'], category: 'fun', description: 'Кушать' },
+      { name: `${prefix}textreverse `, blocked: false, argument: ['текст'], category: 'fun', description: 'Текст, но задом наперёд' },
+      { name: `${prefix}popit`, blocked: false, argument: ['-'], category: 'fun', description: 'Попыт в дискорде' },
+
+      { name: `${prefix}fourk`, blocked: false, argument: ['-'], category: 'nsfw', description: '[описание скрыто для защиты ваших глаз]' },
+      { name: `${prefix}anal`, blocked: false, argument: ['-'], category: 'nsfw', description: '[описание скрыто для защиты ваших глаз]' },
+      { name: `${prefix}ass`, blocked: false, argument: ['-'], category: 'nsfw', description: '[описание скрыто для защиты ваших глаз]' },
+      { name: `${prefix}boobs`, blocked: false, argument: ['-'], category: 'nsfw', description: '[описание скрыто для защиты ваших глаз]' },
+      { name: `${prefix}gonewild`, blocked: false, argument: ['-'], category: 'nsfw', description: '[описание скрыто для защиты ваших глаз]' },
+      { name: `${prefix}pgif`, blocked: false, argument: ['-'], category: 'nsfw', description: '[описание скрыто для защиты ваших глаз]' },
+      { name: `${prefix}pussy`, blocked: false, argument: ['-'], category: 'nsfw', description: '[описание скрыто для защиты ваших глаз]' },
+      { name: `${prefix}thigh`, blocked: false, argument: ['-'], category: 'nsfw', description: '[описание скрыто для защиты ваших глаз]' },
+
+      { name: `${prefix}vimeworldgames`, blocked: false, argument: ['-'], category: 'minecraft', description: 'Все мини-игры на сервере VimeWorld' },
+      { name: `${prefix}minecraftplayer `, blocked: false, argument: ['никнейм'], category: 'minecraft', description: 'Информация о игроке Minecraft' },
+      { name: `${prefix}vimeworldonline`, blocked: false, argument: ['-'], category: 'minecraft', description: 'Онлайн на мини-играх VimeWorld\'a' },
+      { name: `${prefix}hypixelstats`, blocked: false, argument: ['никнейм'], category: 'minecraft', description: 'Статистика игрока с Hypixel' },
+      { name: `${prefix}redguystats`, blocked: false, argument: ['никнейм'], category: 'minecraft', description: 'Статистика игрока с RedGuy' },
+      { name: `${prefix}minecraftserver`, blocked: false, argument: ['ip'], category: 'minecraft', description: 'Информация о сервере Minecraft' },
+
+      { name: `${prefix}translate`, blocked: false, argument: ['-'], category: 'bot', description: 'Помочь с переводом бота на английский язык' },
+      { name: `${prefix}categorystats`, blocked: false, argument: ['-'], category: 'bot', description: 'Статистика использований команд' },
+      { name: `${prefix}invitebot`, blocked: false, argument: ['-'], category: 'bot', description: 'Пригласить бота на свой сервер' },
+      { name: `${prefix}donate`, blocked: false, argument: ['-'], category: 'bot', description: 'Материально помочь проекту' },
+      { name: `${prefix}botinfo`, blocked: false, argument: ['-'], category: 'bot', description: 'Статистика и информация о боте' },
+      { name: `${prefix}version`, blocked: false, argument: ['-'], category: 'bot', description: 'Текущая версия бота' },
+      { name: `${prefix}setprefix `, blocked: false, argument: ['префикс'], category: 'bot', description: 'Изменить префикс на сервере' },
+      { name: `${prefix}language`, blocked: false, argument: ['-'], category: 'bot', description: 'Изменение языка на сервере' },
+      { name: `${prefix}levelup`, blocked: false, argument: ['-'], category: 'bot', description: 'Вкл/выкл сообщений о повышении уровня' },
+      { name: `${prefix}bug `, blocked: false, argument: ['-'], category: 'bot', description: 'Отправить идею или баг' },
+      { name: `${prefix}uptime`, blocked: false, argument: ['-'], category: 'bot', description: 'Время работы бота' },
+      { name: `${prefix}faq`, blocked: false, argument: ['-'], category: 'bot', description: 'Ответы на частозадаваемые вопросы' },
+      { name: `${prefix}ping`, blocked: false, argument: ['-'], category: 'bot', description: 'Пинг бота' },
+
+      { name: `${prefix}serverinfo`, blocked: false, argument: ['-'], category: 'info', description: 'Информация о сервере' },
+      { name: `${prefix}whennewyear`, blocked: false, argument: ['-'], category: 'info', description: 'Сколько дней до нового года' },
+      { name: `${prefix}covid19`, blocked: false, argument: ['-'], category: 'info', description: 'Информация распространения COVID-19' },
+      { name: `${prefix}statusredguy`, blocked: false, argument: ['-'], category: 'info', description: 'Статус сервисов RedGuy' },
+      { name: `${prefix}help`, blocked: false, argument: ['-'], category: 'info', description: 'Список всех команд' },
+      { name: `${prefix}oldhelp`, blocked: false, argument: ['21'], category: 'info', description: 'Список всех команд' },
+      { name: `${prefix}weather `, blocked: false, argument: ['город'], category: 'info', description: 'Погода в вашем городе' },
+      { name: `${prefix}checkip`, blocked: false, argument: ['127.0.0.1'], category: 'info', description: 'Информация о ip/домене' },
+      { name: `${prefix}wiki`, blocked: false, argument: ['fire'], category: 'info', description: 'Википедия' },
+
+      { name: `${prefix}setslowmode `, blocked: false, argument: ['секунды'], category: 'admin', description: 'Установить медленный режим в канале' },
+      { name: `${prefix}poll `, blocked: false, argument: ['описание'], category: 'admin', description: 'Создание голосований' },
+      { name: `${prefix}ban `, blocked: false, argument: ['@вампус#0001', ' причина'], category: 'admin', description: 'Забанить участника' },
+      { name: `${prefix}kick `, blocked: false, argument: ['@вампус#0001', ' причина'], category: 'admin', description: 'Кикнуть участника' },
+      { name: `${prefix}perms `, blocked: false, argument: ['@вампус#0001'], category: 'admin', description: 'Права упоминаемого участника' },
+      { name: `${prefix}say `, blocked: false, argument: ['текст'], category: 'admin', description: 'Сказать от имени бота' },
+      { name: `${prefix}hiddenmode`, blocked: false, argument: ['-'], category: 'admin', description: 'Скрытый режим' },
+      { name: `${prefix}clear `, blocked: false, argument: ['число'], category: 'admin', description: 'Удаление сообщений' },
+
+      { name: `${prefix}rainbow `, blocked: false, argument: ['@вампус#0001'], category: 'photo', description: 'Накладывает радугу на аватарку...' },
+      { name: `${prefix}triggered `, blocked: true, argument: ['@вампус#0001'], category: 'photo', description: 'Накладывает текст wasted на аватарку как в GTA.' },
+      { name: `${prefix}wasted `, blocked: false, argument: ['@вампус#0001'], category: 'photo', description: 'Людей часто провоцируют...' },
+      { name: `${prefix}demotivator `, blocked: false, argument: ['текст'], category: 'photo', description: 'Создаёт демотиватор' },
+      { name: `${prefix}filter-bw`, blocked: false, argument: ['картинка'], category: 'photo', description: 'Добавляет чёрно-белый фильтр' },
+      { name: `${prefix}filter-fe`, blocked: false, argument: ['картинка'], category: 'photo', description: 'Добавляет фильтр "рыбий глаз"' },
+
+      { name: `${prefix}vkuserinfo `, blocked: true, argument: ['id'], category: 'vk', description: 'Информация о пользователе ВК' },
+      { name: `${prefix}vkgroup `, blocked: true, argument: ['id'], category: 'vk', description: 'Информация о группе ВКонтакте' },
+
+      { name: `${prefix}ytpr `, blocked: true, argument: ['youtu.be/<...>'], category: 'youtube', description: 'Пиар вашего видео у нас на сервере' },
+      { name: `${prefix}ytsearch `, blocked: true, argument: ['клип'], category: 'youtube', description: 'Поиск видео на YouTube' },
+
+      { name: `${prefix}try `, blocked: false, argument: ['я <...>?'], category: 'fun', description: 'Команда описывающее действие' },
+      { name: `${prefix}ship `, blocked: false, argument: ['@вампус#0001 @друг#0002'], category: 'fun', description: 'Шиппинг!' },
+
+      { name: `${prefix}redguyinfo `, blocked: false, argument: ['20'], category: 'other', description: 'Информация о пользователе redguy.ru' },
+      { name: `${prefix}short `, blocked: false, argument: ['https://example.com'], category: 'other', description: 'Сократить ссылку' },
+      { name: `${prefix}avatar `, blocked: false, argument: ['@вампус#0001'], category: 'other', description: 'Показывает аватарку' },
+      { name: `${prefix}bin `, blocked: false, argument: ['1337'], category: 'other', description: 'Бинировать число' },
+    ]
+
+    commands.forEach(({ name, blocked, argument, category, description }) => {
+    if (blocked === false) {
+        console.log(`${name} (${argument}), (blocked? ${blocked}), ${category}, ${description}`);
+        document.querySelector('.commands-category-' + category).innerHTML += `
+            <div class="command">
+                <i class="icon fas fa-copy"></i>
+                <span class="name">${name}</span>
+                <span class="argument">${argument}</span>   
+
+                <span class="description">${description}</span>
+                <div class="show-copied">Скопировано</div>
+            </div>
+        `
+    } else {
+        console.log(`${name} (${argument}), (blocked? ${blocked}), ${category}, ${description}`);
+        document.querySelector('.commands-category-' + category).innerHTML += `
+            <div class="blocked-command">
+                <i class="icon fas fa-copy"></i>
+                <span class="name">${name}</span>
+                <span class="argument">${argument}</span>
+
+                <span class="description">${description}</span>
+                <div class="show-blocked">Команда удалена или недоступна</div>
+            </div>
+        `
+        }
+    });
+
+    document.querySelectorAll('.command').forEach(button => {
+        button.addEventListener('click', async ({ currentTarget }) => {
+            currentTarget.classList.add('copied');
+            const description = currentTarget.querySelector('.description');
+            const name = currentTarget.querySelector('.name');
+
+            copyToClipboard(name.innerText);
+            setTimeout(() => currentTarget.classList.remove('copied'), 1000);
+        });
+    });
+
+    document.querySelectorAll('.blocked-command').forEach(button => {
+        button.addEventListener('click', async ({ currentTarget }) => {
+            currentTarget.classList.add('blocked');
+            const description = currentTarget.querySelector('.description');
+            const name = currentTarget.querySelector('.name');
+
+            setTimeout(() => currentTarget.classList.remove('blocked'), 1312)
+        });
+    });
+  </script>
+</body>
+</html>
