@@ -449,6 +449,7 @@ details[open]>summary {
       { name: `${prefix}cointree`, blocked: false, category: 'money', description: 'Денежное дерево' },
       { name: `${prefix}event`, blocked: false, category: 'money', description: 'Бесплатные ресурсы' },
       { name: `${prefix}leaders`, blocked: false, category: 'money', description: 'Список лидеров по предметам' },
+      { name: `${prefix}hideinleaders`, blocked: false, category: 'money', description: 'Скрытие из списка лидеров' },
       { name: `${prefix}bitcoin`, blocked: false, category: 'money', description: 'Биткоин' },
       { name: `${prefix}paybitcoin`, blocked: false, category: 'money', description: 'Передать биткоин' },
       { name: `${prefix}bitcoinsell`, blocked: false, category: 'money', description: 'Продать биткоин' },
@@ -499,7 +500,10 @@ details[open]>summary {
       { name: `${prefix}dog`, blocked: false, category: 'fun', description: 'Собака' },
       { name: `${prefix}quote`, blocked: false, category: 'fun', description: 'Случайная цитата' },
       { name: `${prefix}waiting`, blocked: false, category: 'fun', description: 'Ждать' },
+      { name: `${prefix}try `, blocked: false, category: 'fun', description: 'Команда описывающее действие' },
+      { name: `${prefix}ship `, blocked: false, category: 'fun', description: 'Шиппинг!' },
       { name: `${prefix}eat`, blocked: false, category: 'fun', description: 'Кушать' },
+      { name: `${prefix}lay`, blocked: false, category: 'fun', description: 'Лежать' },
       { name: `${prefix}textreverse `, blocked: false, category: 'fun', description: 'Текст, но задом наперёд' },
       { name: `${prefix}popit`, blocked: false, category: 'fun', description: 'Попыт в дискорде' },
 
@@ -519,6 +523,16 @@ details[open]>summary {
       { name: `${prefix}redguystats`, blocked: false, category: 'minecraft', description: 'Статистика игрока с RedGuy' },
       { name: `${prefix}minecraftserver`, blocked: false, category: 'minecraft', description: 'Информация о сервере Minecraft' },
 
+      { name: `${prefix}serverinfo`, blocked: false, category: 'info', description: 'Информация о сервере' },
+      { name: `${prefix}whennewyear`, blocked: false, category: 'info', description: 'Сколько дней до нового года' },
+      { name: `${prefix}covid19`, blocked: false, category: 'info', description: 'Информация распространения COVID-19' },
+      { name: `${prefix}statusredguy`, blocked: false, category: 'info', description: 'Статус сервисов RedGuy' },
+      { name: `${prefix}help`, blocked: false, category: 'info', description: 'Список всех команд' },
+      { name: `${prefix}oldhelp`, blocked: false, category: 'info', description: 'Список всех команд' },
+      { name: `${prefix}weather `, blocked: false, category: 'info', description: 'Погода в вашем городе' },
+      { name: `${prefix}checkip`, blocked: false, category: 'info', description: 'Информация о ip/домене' },
+      { name: `${prefix}wiki`, blocked: false, category: 'info', description: 'Википедия' },
+
       { name: `${prefix}translate`, blocked: false, category: 'bot', description: 'Помочь с переводом бота на английский язык' },
       { name: `${prefix}categorystats`, blocked: false, category: 'bot', description: 'Статистика использований команд' },
       { name: `${prefix}invitebot`, blocked: false, category: 'bot', description: 'Пригласить бота на свой сервер' },
@@ -532,16 +546,6 @@ details[open]>summary {
       { name: `${prefix}uptime`, blocked: false, category: 'bot', description: 'Время работы бота' },
       { name: `${prefix}faq`, blocked: false, category: 'bot', description: 'Ответы на частозадаваемые вопросы' },
       { name: `${prefix}ping`, blocked: false, category: 'bot', description: 'Пинг бота' },
-
-      { name: `${prefix}serverinfo`, blocked: false, category: 'info', description: 'Информация о сервере' },
-      { name: `${prefix}whennewyear`, blocked: false, category: 'info', description: 'Сколько дней до нового года' },
-      { name: `${prefix}covid19`, blocked: false, category: 'info', description: 'Информация распространения COVID-19' },
-      { name: `${prefix}statusredguy`, blocked: false, category: 'info', description: 'Статус сервисов RedGuy' },
-      { name: `${prefix}help`, blocked: false, category: 'info', description: 'Список всех команд' },
-      { name: `${prefix}oldhelp`, blocked: false, category: 'info', description: 'Список всех команд' },
-      { name: `${prefix}weather `, blocked: false, category: 'info', description: 'Погода в вашем городе' },
-      { name: `${prefix}checkip`, blocked: false, category: 'info', description: 'Информация о ip/домене' },
-      { name: `${prefix}wiki`, blocked: false, category: 'info', description: 'Википедия' },
 
       { name: `${prefix}setslowmode `, blocked: false, category: 'admin', description: 'Установить медленный режим в канале' },
       { name: `${prefix}poll `, blocked: false, category: 'admin', description: 'Создание голосований' },
@@ -564,9 +568,6 @@ details[open]>summary {
 
       { name: `${prefix}ytpr `, blocked: true, category: 'youtube', description: 'Пиар вашего видео у нас на сервере' },
       { name: `${prefix}ytsearch `, blocked: true, category: 'youtube', description: 'Поиск видео на YouTube' },
-
-      { name: `${prefix}try `, blocked: false, category: 'fun', description: 'Команда описывающее действие' },
-      { name: `${prefix}ship `, blocked: false, category: 'fun', description: 'Шиппинг!' },
 
       { name: `${prefix}redguyinfo `, blocked: false, category: 'other', description: 'Информация о пользователе redguy.ru' },
       { name: `${prefix}short `, blocked: false, category: 'other', description: 'Сократить ссылку' },
