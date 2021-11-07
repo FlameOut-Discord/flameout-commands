@@ -1,0 +1,318 @@
+details {
+    display: block;
+    border: 1px solid rgb(21, 19, 19);
+    border-radius: 4px;
+    margin: 10px 15px 0px 15px;
+    padding: .5em;
+}
+
+details summary {
+    display: list-item;
+    margin: -.5em;
+    padding: .5em;
+}
+
+details[open]>summary {
+    margin-bottom: .5em;
+    border-bottom: 1px solid black;
+}
+
+@font-face {
+    font-family: "Exo 2";
+    src: url("https://fonts.gstatic.com/s/exo2/v10/7cH1v4okm5zmbvwkAx_sfcEuiD8jvvKsOdC_.woff2")
+  }
+
+  html, body {
+    font-family: 'Exo 2', sans-serif;
+    background-color: #282b30;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+
+  .commands-category-money {
+    /* display: flex; */
+    max-width: max-content;
+    flex-wrap: wrap;
+  }
+
+  .commands-category-money > .command,.blocked-command {
+    position: relative;
+    background-color: #36393f;
+    padding: 0.5em;
+    margin: 10px;
+    border-radius: .25rem;
+    transition: all .1s ease;
+  }
+
+  .commands-category-money > .command:hover,.blocked-command:hover {
+    transform: scale(1.05);
+    background-color: #7289DA;
+    cursor: pointer;
+  }
+
+  .commands-category-fun {
+    /* display: flex; */
+    max-width: max-content;
+    flex-wrap: wrap;
+  }
+
+  .commands-category-fun > .command,.blocked-command {
+    position: relative;
+    background-color: #36393f;
+    padding: 0.5em;
+    margin: 10px;
+    border-radius: .25rem;
+    transition: all .1s ease;
+  }
+
+  .commands-category-fun > .command:hover,.blocked-command:hover {
+    transform: scale(1.05);
+    background-color: #7289DA;
+    cursor: pointer;
+  }
+
+  .commands-category-nsfw {
+    /* display: flex; */
+    max-width: max-content;
+    flex-wrap: wrap;
+  }
+
+  .commands-category-nsfw > .command,.blocked-command {
+    position: relative;
+    background-color: #36393f;
+    padding: 0.5em;
+    margin: 10px;
+    border-radius: .25rem;
+    transition: all .1s ease;
+  }
+
+  .commands-category-nsfw > .command:hover,.blocked-command:hover {
+    transform: scale(1.05);
+    background-color: #7289DA;
+    cursor: pointer;
+  }
+
+  .commands-category-minecraft {
+    /* display: flex; */
+    max-width: max-content;
+    flex-wrap: wrap;
+  }
+
+  .commands-category-minecraft > .command,.blocked-command {
+    position: relative;
+    background-color: #36393f;
+    padding: 0.5em;
+    margin: 10px;
+    border-radius: .25rem;
+    transition: all .1s ease;
+  }
+
+  .commands-category-minecraft > .command:hover,.blocked-command:hover {
+    transform: scale(1.05);
+    background-color: #7289DA;
+    cursor: pointer;
+  }
+
+  .commands-category-info {
+    /* display: flex; */
+    max-width: max-content;
+    flex-wrap: wrap;
+  }
+
+  .commands-category-info > .command,.blocked-command {
+    position: relative;
+    background-color: #36393f;
+    padding: 0.5em;
+    margin: 10px;
+    border-radius: .25rem;
+    transition: all .1s ease;
+  }
+
+  .commands-category-info > .command:hover,.blocked-command:hover {
+    transform: scale(1.05);
+    background-color: #7289DA;
+    cursor: pointer;
+  }
+
+  .commands-category-bot {
+    /* display: flex; */
+    max-width: max-content;
+    flex-wrap: wrap;
+  }
+
+  .commands-category-bot > .command,.blocked-command {
+    position: relative;
+    background-color: #36393f;
+    padding: 0.5em;
+    margin: 10px;
+    border-radius: .25rem;
+    transition: all .1s ease;
+  }
+
+  .commands-category-bot > .command:hover,.blocked-command:hover {
+    transform: scale(1.05);
+    background-color: #7289DA;
+    cursor: pointer;
+  }
+
+  .commands-category-admin {
+    /* display: flex; */
+    max-width: max-content;
+    flex-wrap: wrap;
+  }
+
+  .commands-category-admin > .command,.blocked-command {
+    position: relative;
+    background-color: #36393f;
+    padding: 0.5em;
+    margin: 10px;
+    border-radius: .25rem;
+    transition: all .1s ease;
+  }
+
+  .commands-category-admin > .command:hover,.blocked-command:hover {
+    transform: scale(1.05);
+    background-color: #7289DA;
+    cursor: pointer;
+  }
+
+  .commands-category-photo {
+    /* display: flex; */
+    max-width: max-content;
+    flex-wrap: wrap;
+  }
+
+  .commands-category-photo > .command,.blocked-command {
+    position: relative;
+    background-color: #36393f;
+    padding: 0.5em;
+    margin: 10px;
+    border-radius: .25rem;
+    transition: all .1s ease;
+  }
+
+  .commands-category-photo > .command:hover,.blocked-command:hover {
+    transform: scale(1.05);
+    background-color: #7289DA;
+    cursor: pointer;
+  }
+
+  .commands-category-vk {
+    /* display: flex; */
+    max-width: max-content;
+    flex-wrap: wrap;
+  }
+
+  .commands-category-vk > .command,.blocked-command {
+    position: relative;
+    background-color: #36393f;
+    padding: 0.5em;
+    margin: 10px;
+    border-radius: .25rem;
+    transition: all .1s ease;
+  }
+
+  .commands-category-vk > .command:hover,.blocked-command:hover {
+    transform: scale(1.05);
+    background-color: #7289DA;
+    cursor: pointer;
+  }
+
+  .commands-category-youtube {
+    /* display: flex; */
+    max-width: max-content;
+    flex-wrap: wrap;
+  }
+
+  .commands-category-youtube > .command,.blocked-command {
+    position: relative;
+    background-color: #36393f;
+    padding: 0.5em;
+    margin: 10px;
+    border-radius: .25rem;
+    transition: all .1s ease;
+  }
+
+  .commands-category-youtube > .command:hover,.blocked-command:hover {
+    transform: scale(1.05);
+    background-color: #7289DA;
+    cursor: pointer;
+  }
+
+  .commands-category-other {
+    /* display: flex; */
+    max-width: max-content;
+    flex-wrap: wrap;
+  }
+
+  .commands-category-other > .command,.blocked-command {
+    position: relative;
+    background-color: #36393f;
+    padding: 0.5em;
+    margin: 10px;
+    border-radius: .25rem;
+    transition: all .1s ease;
+  }
+
+  .commands-category-other > .command:hover,.blocked-command:hover {
+    transform: scale(1.05);
+    background-color: #7289DA;
+    cursor: pointer;
+  }
+
+  .command > .name {
+    margin: 0 8.50px;
+    font-weight: 700;
+  }
+
+  .blocked-command > .name {
+    margin: 0 8.50px;
+    font-weight: 700;
+  }
+
+  .command > .description {
+    opacity: .5;
+    margin-right: 5px;
+  }
+
+  .blocked-command > .description {
+    opacity: .5;
+    margin-right: 5px;
+  }
+
+  .command > .show-copied {
+    display: none;
+    position: absolute;
+    border-radius: inherit;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #43B581;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+  }
+
+  .blocked-command > .show-blocked {
+    display: none;
+    position: absolute;
+    border-radius: inherit;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e94646;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+  }
+
+  .command.copied > .show-copied {
+    display: flex;
+  }
+
+  .blocked-command.blocked > .show-blocked {
+    display: flex;
+  }
