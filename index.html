@@ -38,8 +38,9 @@
 <body>
   <br>
   <div align="center">
-    <!-- TODO: сделать чтобы на пк версии баннер был меньше -->
-    <img src="./files/images/flame_banner_white_halloween.png" width="100%">
+    <div class="banner-block">
+      <img src="./files/images/flame_banner_white_halloween.png" width="100%">
+    </div>
     <p>При нажатие на команду она скопируется в буфер обмена</p>
   </div>
 
@@ -97,6 +98,14 @@
     <summary>Другое</summary>
     <div class="commands-category-other"></div>
   </details>
+
+  <hr>
+
+  <div class="discord-block">
+    <a href="https://discord.gg/EJc8UC7yhZ" target="_blank">
+      <img src="https://invidget.switchblade.xyz/EJc8UC7yhZ" width="100%">
+    </a>
+  </div>
 
   <script type="module">
     const copyToClipboard = message => {
@@ -279,7 +288,7 @@
                 <i class="icon fas fa-copy"></i>
                 <span class="name">${name}</span>
                 <span class="description">${description}</span>
-                <div class="show-blocked">Команда удалена или недоступна</div>
+                <div class="show-blocked">Команда удалена или временно недоступна</div>
             </div>
         `
       }
