@@ -20,12 +20,27 @@ details[open]>summary {
 
 /* Blocks */
 .banner-block {
-  margin: 1em;
-  width: 95%;
+  width: 45%;
+}
+
+@media only screen and (max-width: 1300px) { 
+  .banner-block { 
+    width: 100%; 
+  } 
 }
 
 .discord-block {
   margin: 1em;
+}
+
+.discord-img {
+  width: 45%;
+}
+
+@media only screen and (max-width: 1300px) { 
+  .discord-img {
+    width: 100%;
+  } 
 }
 
 /* Colored text and other */
