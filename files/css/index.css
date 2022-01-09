@@ -1,3 +1,37 @@
+/* Page */
+@font-face {
+  font-family: "Exo 2";
+  src: url("https://fonts.gstatic.com/s/exo2/v10/7cH1v4okm5zmbvwkAx_sfcEuiD8jvvKsOdC_.woff2")
+}
+
+html, body {
+  font-family: 'Exo 2', sans-serif;
+  background-color: #282b30;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+/* Scroll bar */
+::-webkit-scrollbar {
+  width: 12px;
+  border-radius: 15px;
+  background: #2f3337;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #212327;
+  border-radius: 15px;
+  -webkit-border-radius: 1ex;
+  border: 3px solid #2f3337;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1e2024;
+  border-radius: 15px;
+  -webkit-border-radius: 1ex;
+}
+
 /* Details */
 details {
   display: block;
@@ -51,48 +85,16 @@ hr {
   border-top: 15px solid rgba(0, 0, 0, .1)
 }
 
-.text-color-white {
-  color: white;
-}
+.text-color-white { color: white };
+.text-color-red { color: red };
+.text-color-gray { color: gray };
+.text-color-grey { color: gray };
 
-.text-color-red {
-  color: red;
-}
+.TCP-stats-russian { cursor: grabbing };
+.TCP-stats-english { cursor: grabbing };
+.TCP-stats-ukrainskiy { cursor: grabbing };
 
-/* Scroll bar */
-::-webkit-scrollbar {
-  width: 12px;
-  border-radius: 15px;
-  background: #2f3337;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #212327;
-  border-radius: 15px;
-  -webkit-border-radius: 1ex;
-  border: 3px solid #2f3337;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #1e2024;
-  border-radius: 15px;
-  -webkit-border-radius: 1ex;
-}
-
-/* */
-@font-face {
-  font-family: "Exo 2";
-  src: url("https://fonts.gstatic.com/s/exo2/v10/7cH1v4okm5zmbvwkAx_sfcEuiD8jvvKsOdC_.woff2")
-}
-
-html, body {
-  font-family: 'Exo 2', sans-serif;
-  background-color: #282b30;
-  margin: 0;
-  padding: 0;
-  color: white;
-}
-
+/* Commands */
 .commands-category-money {
   /* display: flex; */
   max-width: max-content;
@@ -298,6 +300,27 @@ html, body {
 }
 
 .commands-category-youtube>.command:hover, .blocked-command:hover {
+  transform: scale(1.05);
+  background-color: #7289DA;
+  cursor: pointer;
+}
+
+.commands-category-github {
+  /* display: flex; */
+  max-width: max-content;
+  flex-wrap: wrap;
+}
+
+.commands-category-github>.command, .blocked-command {
+  position: relative;
+  background-color: #36393f;
+  padding: 0.5em;
+  margin: 10px;
+  border-radius: .25rem;
+  transition: all .1s ease;
+}
+
+.commands-category-github>.command:hover, .blocked-command:hover {
   transform: scale(1.05);
   background-color: #7289DA;
   cursor: pointer;

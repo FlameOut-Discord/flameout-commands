@@ -96,10 +96,36 @@
   </details>
 
   <details>
+    <summary>GitHub  <small><font color="red">new</font></small></summary>
+    <div class="commands-category-github"></div>
+  </details>
+
+  <details>
     <summary>Другое</summary>
     <div class="commands-category-other"></div>
   </details>
 
+  <hr>
+  <div align="center">
+    <p>Статистика переводов команд</p>
+    <div class="TCP-stats-russian">
+      <label class="text-color-red">Русский язык:</label>
+      <progress value="148" max="148" id="TCP-russian"></progress>
+      <label for="TCP-russian" id="TCP-russian-label">0%</label>
+    </div>
+
+    <div class="TCP-stats-english">
+      <label class="text-color-red">Английский язык:</label>
+      <progress value="107" max="148" id="TCP-english"></progress>
+      <label for="TCP-english" id="TCP-english-label">0%</label>
+    </div>
+
+    <div class="TCP-stats-ukrainskiy">
+      <label class="text-color-red">Украинский язык:</label>
+      <progress value="148" max="148" id="TCP-ukrainskiy"></progress>
+      <label for="TCP-ukrainskiy" id="TCP-ukrainskiy-label">0%</label>
+    </div>
+  </div>
   <hr>
 
   <div class="discord-block" align="center">
@@ -108,28 +134,52 @@
     </a>
   </div>
 
-  <script type="module">
+  <script type="module" type="text/javascript">
+    // TCP - Translated Commands Progressbar
+    // Russian [ru]
+    let TCP_russian = document.getElementById('TCP-russian');
+    let TCP_russian_label = document.getElementById('TCP-russian-label');
+
+    var russian_percent = Math.floor((100 / TCP_russian.max) * TCP_russian.value);
+    TCP_russian_label.textContent = russian_percent + '%';
+
+    // English [en]
+    let TCP_english = document.getElementById('TCP-english');
+    let TCP_english_label = document.getElementById('TCP-english-label');
+
+    var english_percent = Math.floor((100 / TCP_english.max) * TCP_english.value);
+    TCP_english_label.textContent = english_percent + '%';
+
+    // Ukrainskiy [ua]
+    let TCP_ukrainskiy = document.getElementById('TCP-ukrainskiy');
+    let TCP_ukrainskiy_label = document.getElementById('TCP-ukrainskiy-label');
+
+    var ukrainskiy_percent = Math.floor((100 / TCP_ukrainskiy.max) * TCP_ukrainskiy.value);
+    TCP_ukrainskiy_label.textContent = ukrainskiy_percent + '%';
+  </script>
+
+  <script type="module" type="text/javascript">
     const copyToClipboard = message => {
-      const textArea = document.createElement("textarea")
-      textArea.value = message
-      textArea.style.opacity = "0"
-      document.body.appendChild(textArea)
-      textArea.focus()
-      textArea.select()
+      const textArea = document.createElement("textarea");
+      textArea.value = message;
+      textArea.style.opacity = "0";
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
 
       try {
-        const successful = document.execCommand('copy')
-        const msg = successful ? 'successful' : 'unsuccessful'
-        console.log('Copying to clipboard was successful!')
+        const successful = document.execCommand('copy');
+        const msg = successful ? 'successful' : 'unsuccessful';
+        console.log('Copying to clipboard was successful!');
       } catch (e) {
-        console.error('Error while copying to clipboard:', e)
+        console.error('Error while copying to clipboard:', e);
       }
 
-      document.body.removeChild(textArea)
+      document.body.removeChild(textArea);
     }
 
     const prefix = 'f!';
-    console.log('Префикс: ' + prefix)
+    console.log('Префикс: ' + prefix);
 
     const commands = [
       { name: `${prefix}msnuseat `, blocked: false, category: 'money', description: 'Скушать несколько снюса за раз' },
@@ -175,7 +225,7 @@
       { name: `${prefix}lizard`, blocked: false, category: 'fun', description: 'Фотография змеи' },
       { name: `${prefix}bunny`, blocked: false, category: 'fun', description: 'Фотография зайца' },
       { name: `${prefix}duck`, blocked: false, category: 'fun', description: 'Фотография утки' },
-      { name: `${prefix}letterforsantaclaus `, blocked: false, category: 'fun', description: 'Генератор писем деду Морозу'},
+      { name: `${prefix}letterforsantaclaus `, blocked: false, category: 'fun', description: 'Генератор писем деду Морозу' },
       { name: `${prefix}choose `, blocked: false, category: 'fun', description: 'Бот выберет случайный вариант' },
       { name: `${prefix}coinflip `, blocked: false, category: 'fun', description: 'Подбросить монетку' },
       { name: `${prefix}cat`, blocked: false, category: 'fun', description: 'Фотография кошки' },
@@ -273,6 +323,9 @@
 
       { name: `${prefix}ytpr `, blocked: true, category: 'youtube', description: 'Пиар вашего видео у нас на сервере' },
       { name: `${prefix}ytsearch `, blocked: true, category: 'youtube', description: 'Поиск видео на YouTube' },
+
+      { name: `${prefix}githubprofile `, blocked: false, category: 'github', description: 'Получение некоторой информации о организации или пользователе с сервиса GitHub по юзернейму' },
+      { name: `${prefix}githubrepos `, blocked: false, category: 'github', description: 'Получение 12 открытых репозиториев организации или пользователя с сервиса GitHub по юзернейму' },
 
       { name: `${prefix}redguyinfo `, blocked: true, category: 'other', description: 'Информация о пользователе redguy.ru' },
       { name: `${prefix}short `, blocked: false, category: 'other', description: 'Сократить ссылку' },
