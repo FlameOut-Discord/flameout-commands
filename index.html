@@ -106,57 +106,12 @@
   </details>
 
   <hr>
-  <div align="center">
-    <p>Статистика переводов команд</p>
-    <div class="TCP-stats-russian">
-      <label class="text-color-red">Русский язык:</label>
-      <progress value="148" max="148" id="TCP-russian"></progress>
-      <label for="TCP-russian" id="TCP-russian-label">0%</label>
-    </div>
-
-    <div class="TCP-stats-english">
-      <label class="text-color-red">Английский язык:</label>
-      <progress value="107" max="148" id="TCP-english"></progress>
-      <label for="TCP-english" id="TCP-english-label">0%</label>
-    </div>
-
-    <div class="TCP-stats-ukrainskiy">
-      <label class="text-color-red">Украинский язык:</label>
-      <progress value="148" max="148" id="TCP-ukrainskiy"></progress>
-      <label for="TCP-ukrainskiy" id="TCP-ukrainskiy-label">0%</label>
-    </div>
-  </div>
-  <hr>
 
   <div class="discord-block" align="center">
     <a href="https://discord.gg/EJc8UC7yhZ" target="_blank">
       <img class="discord-img" src="https://invidget.switchblade.xyz/EJc8UC7yhZ" width="100%">
     </a>
   </div>
-
-  <script type="module" type="text/javascript">
-    // TCP - Translated Commands Progressbar
-    // Russian [ru]
-    let TCP_russian = document.getElementById('TCP-russian');
-    let TCP_russian_label = document.getElementById('TCP-russian-label');
-
-    var russian_percent = Math.floor((100 / TCP_russian.max) * TCP_russian.value);
-    TCP_russian_label.textContent = russian_percent + '%';
-
-    // English [en]
-    let TCP_english = document.getElementById('TCP-english');
-    let TCP_english_label = document.getElementById('TCP-english-label');
-
-    var english_percent = Math.floor((100 / TCP_english.max) * TCP_english.value);
-    TCP_english_label.textContent = english_percent + '%';
-
-    // Ukrainskiy [ua]
-    let TCP_ukrainskiy = document.getElementById('TCP-ukrainskiy');
-    let TCP_ukrainskiy_label = document.getElementById('TCP-ukrainskiy-label');
-
-    var ukrainskiy_percent = Math.floor((100 / TCP_ukrainskiy.max) * TCP_ukrainskiy.value);
-    TCP_ukrainskiy_label.textContent = ukrainskiy_percent + '%';
-  </script>
 
   <script type="module" type="text/javascript">
     const copyToClipboard = message => {
@@ -300,6 +255,7 @@
       { name: `${prefix}uptime`, blocked: false, category: 'bot', description: 'Время работы бота' },
       { name: `${prefix}faq`, blocked: false, category: 'bot', description: 'Ответы на частозадаваемые вопросы' },
       { name: `${prefix}ping`, blocked: false, category: 'bot', description: 'Пинг бота' },
+      { name: `${prefix}staff`, blocked: false, category: 'bot', description: 'Команда FlameOut' },
       { name: `${prefix}onlinestaff`, blocked: false, category: 'bot', description: 'Разработчики и баг-хантеры, которые прямо сейчас в сети' },
 
       { name: `${prefix}setslowmode `, blocked: false, category: 'admin', description: 'Установить медленный режим в канале' },
