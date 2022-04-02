@@ -5,11 +5,11 @@
 }
 
 html, body {
-  font-family: 'Exo 2', sans-serif;
-  background-color: #282b30;
-  margin: 0;
-  padding: 0;
-  color: white;
+font-family: 'Exo 2', sans-serif;
+background-color: #282b30;
+margin: 0;
+padding: 0;
+color: white;
 }
 
 /* Scroll bar */
@@ -37,8 +37,14 @@ details {
   display: block;
   border: 1px solid rgb(21, 19, 19);
   border-radius: 4px;
-  margin: 10px 15px 0px 15px;
+  margin: 10px 22% 0px 22%;
   padding: .5em;
+}
+
+@media only screen and (max-width: 1300px) { 
+  details {
+    margin: 10px 15px 0px 15px;
+  }
 }
 
 details summary {
@@ -68,13 +74,35 @@ details[open]>summary {
 }
 
 .discord-img {
-  width: 45%;
+  width: 35%;
+}
+
+@media only screen and (max-width: 1300px) { 
+  .discord-img {
+    width: 95%;
+  } 
+}
+
+p {
+  width: 90%;
 }
 
 @media only screen and (max-width: 1300px) { 
   .discord-img {
     width: 100%;
   } 
+}
+
+.buttonLink {
+  width: 4em;
+  height: 4em;
+  border: 1px solid rgb(21, 19, 19);
+  background-color: #282b30;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
 }
 
 /* Colored text and other */
@@ -85,14 +113,53 @@ hr {
   border-top: 15px solid rgba(0, 0, 0, .1)
 }
 
-.text-color-white { color: white };
-.text-color-red { color: red };
-.text-color-gray { color: gray };
-.text-color-grey { color: gray };
+.gray-text {
+  color: gray;
+}
 
-.TCP-stats-russian { cursor: grabbing };
-.TCP-stats-english { cursor: grabbing };
-.TCP-stats-ukrainskiy { cursor: grabbing };
+.red-text {
+  color: red;
+}
+
+.lightblue-text {
+  color: lightblue;
+}
+
+.flameout-color-text {
+  color: #EE3425;
+}
+
+.yellow-text {
+  color: yellow;
+}
+
+.margin-0 {
+  margin: 0px 0px 0px 0px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* xd */
+.flameout-logo-background {
+  background-image: url('../../files/images/flame_42x42.png');
+  background-position: 5px 5px; 
+  background-repeat: no-repeat;
+}
+
+.prefix-picture-background {
+  background-image: url('../../files/images/prefix_picture.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+}
+
+.moneybag-background {
+  background-image: url('../../files/images/moneybag.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+}
 
 /* Commands */
 .commands-category-money {
@@ -401,4 +468,17 @@ hr {
 
 .blocked-command.blocked>.show-blocked {
   display: flex;
+}
+
+/* form */
+input {
+  color: white;
+  width: 87%;
+  font-size: 19px;
+  background-color: rgba(0, 0, 0, .1);
+  box-sizing: border-box;
+  border: 2px solid black;
+  padding: 12px 0px 14px 43px;
+  margin: 0px -1em 10px 7%;
+  border-radius: 5px;
 }

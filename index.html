@@ -38,9 +38,9 @@
   <br>
   <div align="center">
     <div class="banner-block">
-      <img src="https://raw.githubusercontent.com/FlameOut-Discord/flameout-design/main/newyear/flame_banner_white_newyear.png" width="100%">
+      <img src="https://raw.githubusercontent.com/FlameOut-Discord/flameout-design/main/flame_banner_white.png" width="100%">
     </div>
-    <p>При нажатие на команду она скопируется в буфер обмена</p>
+    <p class="gray-text margin-0">При нажатие на команду она скопируется в буфер обмена</p>
   </div>
 
   <hr>
@@ -106,6 +106,20 @@
   </details>
 
   <hr>
+  <div class="links" align="center">
+    <a href="https://flameout-discord.github.io/flameout-commands/">
+      <button class="buttonLink prefix-picture-background"></button>
+    </a>
+
+    <a href="https://flameout-discord.github.io/robbing-calculator/">
+      <button class="buttonLink moneybag-background"></button>
+    </a>
+
+    <a href="https://nubovik.gitbook.io/flameout">
+      <button class="buttonLink flameout-logo-background"></button>
+    </a>
+  </div>
+  <hr>
 
   <div class="discord-block" align="center">
     <a href="https://discord.gg/EJc8UC7yhZ" target="_blank">
@@ -160,6 +174,7 @@
       { name: `${prefix}school`, blocked: false, category: 'money', description: 'Школа' },
       { name: `${prefix}jobs`, blocked: false, category: 'money', description: 'Работы' },
       { name: `${prefix}janitor`, blocked: false, category: 'money', description: 'Дворник' },
+      { name: `${prefix}safe `, blocked: false, category: 'money', description: 'Ваш сейф' },
       { name: `${prefix}bank `, blocked: false, category: 'money', description: 'Ваш банк' },
       { name: `${prefix}bankcard `, blocked: false, category: 'money', description: 'Ваша банковская карта' },
       { name: `${prefix}wood`, blocked: false, category: 'money', description: 'Рубить дерево' },
@@ -171,10 +186,14 @@
       { name: `${prefix}leafsell`, blocked: false, category: 'money', description: 'Продать листики' },
       { name: `${prefix}bankhack`, blocked: false, category: 'money', description: 'Взломать банк' },
       { name: `${prefix}profile `, blocked: false, category: 'money', description: 'Профиль' },
+      { name: `${prefix}paygift `, blocked: false, category: 'money', description: 'Передать подарки пользователю' },
+      { name: `${prefix}pay `, blocked: false, category: 'money', description: 'Передать монеты пользователю' },
+      { name: `${prefix}roulette `, blocked: true, category: 'money', description: 'Рулетка' },
       { name: `${prefix}resourceprofile `, blocked: false, category: 'money', description: 'Профиль ресурсов' },
       { name: `${prefix}gift`, blocked: false, category: 'money', description: 'Открыть подарок' },
+      { name: `${prefix}hideinleaders`, blocked: false, category: 'money', description: 'Скрытие из топа' },
       { name: `${prefix}mgift `, blocked: false, category: 'money', description: 'Открыть несколько подарков за раз' },
-      { name: `${prefix}reputation `, blocked: false, category: 'money', description: 'Добавить или снять репутацию пользователю (раз в 24 часа)' },
+      { name: `${prefix}reputation `, blocked: true, category: 'money', description: 'Добавить или снять репутацию пользователю (раз в 24 часа)' },
 
       { name: `${prefix}pressf `, blocked: false, category: 'fun', description: 'Press f to pay respects!' },
       { name: `${prefix}lizard`, blocked: false, category: 'fun', description: 'Фотография змеи' },
@@ -185,7 +204,7 @@
       { name: `${prefix}coinflip `, blocked: false, category: 'fun', description: 'Подбросить монетку' },
       { name: `${prefix}cat`, blocked: false, category: 'fun', description: 'Фотография кошки' },
       { name: `${prefix}singing`, blocked: false, category: 'fun', description: 'Петь' },
-      { name: `${prefix}react`, blocked: false, category: 'fun', description: 'Бот поставит реакции на ваше сообщение.' },
+      { name: `${prefix}react `, blocked: false, category: 'fun', description: 'Бот поставит реакции на ваше сообщение.' },
       { name: `${prefix}dance`, blocked: false, category: 'fun', description: 'Танцевать' },
       { name: `${prefix}thinks`, blocked: false, category: 'fun', description: 'Думать' },
       { name: `${prefix}hungry`, blocked: false, category: 'fun', description: 'Хочется кушать' },
