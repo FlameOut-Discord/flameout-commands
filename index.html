@@ -81,26 +81,6 @@
   </details>
 
   <details>
-    <summary>Фотофильтры</summary>
-    <div class="commands-category-photo"></div>
-  </details>
-
-  <details>
-    <summary>ВКонтакте</summary>
-    <div class="commands-category-vk"></div>
-  </details>
-
-  <details>
-    <summary>YouTube</summary>
-    <div class="commands-category-youtube"></div>
-  </details>
-
-  <details>
-    <summary>GitHub  <small><font color="red">new</font></small></summary>
-    <div class="commands-category-github"></div>
-  </details>
-
-  <details>
     <summary>Другое</summary>
     <div class="commands-category-other"></div>
   </details>
@@ -236,12 +216,16 @@
       { name: `${prefix}whennewyear`, blocked: false, category: 'info', description: 'Сколько дней до нового года' },
       { name: `${prefix}covid19`, blocked: false, category: 'info', description: 'Информация распространения COVID-19' },
       { name: `${prefix}statusredguy`, blocked: true, category: 'info', description: 'Статус сервисов RedGuy' },
+      { name: `${prefix}vkuserinfo `, blocked: false, category: 'info', description: 'Информация о пользователе ВК' },
+      { name: `${prefix}vkgroup `, blocked: false, category: 'info', description: 'Информация о группе ВКонтакте' },
+      { name: `${prefix}ytsearch `, blocked: true, category: 'info', description: 'Поиск видео на YouTube' },
+      { name: `${prefix}githubprofile `, blocked: false, category: 'info', description: 'Получение некоторой информации о организации или пользователе с сервиса GitHub по юзернейму' },
+      { name: `${prefix}githubrepos `, blocked: false, category: 'info', description: 'Получение 12 открытых репозиториев организации или пользователя с сервиса GitHub по юзернейму' },
       { name: `${prefix}helpmenu`, blocked: false, category: 'info', description: 'Список всех команд, но на менюшках с более детальной информацией' },
       { name: `${prefix}help `, blocked: false, category: 'info', description: 'Список всех команд, но на реакциях с более детальной информацией' },
       { name: `${prefix}oldhelp`, blocked: false, category: 'info', description: 'Список всех команд' },
       { name: `${prefix}weather `, blocked: false, category: 'info', description: 'Погода в вашем городе' },
       { name: `${prefix}checkip `, blocked: false, category: 'info', description: 'Информация о ip/домене' },
-      { name: `${prefix}wiki `, blocked: false, category: 'info', description: 'Википедия' },
 
       { name: `${prefix}translate`, blocked: false, category: 'bot', description: 'Помочь с переводом бота на английский язык' },
       { name: `${prefix}categorystats`, blocked: false, category: 'bot', description: 'Статистика использований команд' },
@@ -271,22 +255,6 @@
       { name: `${prefix}say `, blocked: false, category: 'admin', description: 'Сказать от имени бота' },
       { name: `${prefix}hiddenmode`, blocked: false, category: 'admin', description: 'Скрытый режим' },
       { name: `${prefix}clear `, blocked: false, category: 'admin', description: 'Удаление сообщений' },
-
-      { name: `${prefix}rainbow `, blocked: false, category: 'photo', description: 'Накладывает радугу на аватарку...' },
-      { name: `${prefix}triggered `, blocked: true, category: 'photo', description: 'Накладывает текст wasted на аватарку как в GTA.' },
-      { name: `${prefix}wasted `, blocked: false, category: 'photo', description: 'Людей часто провоцируют...' },
-      { name: `${prefix}demotivator `, blocked: false, category: 'photo', description: 'Создаёт демотиватор' },
-      { name: `${prefix}filter-bw`, blocked: false, category: 'photo', description: 'Добавляет чёрно-белый фильтр' },
-      { name: `${prefix}filter-fe`, blocked: false, category: 'photo', description: 'Добавляет фильтр "рыбий глаз"' },
-
-      { name: `${prefix}vkuserinfo `, blocked: false, category: 'vk', description: 'Информация о пользователе ВК' },
-      { name: `${prefix}vkgroup `, blocked: false, category: 'vk', description: 'Информация о группе ВКонтакте' },
-
-      { name: `${prefix}ytpr `, blocked: true, category: 'youtube', description: 'Пиар вашего видео у нас на сервере' },
-      { name: `${prefix}ytsearch `, blocked: true, category: 'youtube', description: 'Поиск видео на YouTube' },
-
-      { name: `${prefix}githubprofile `, blocked: false, category: 'github', description: 'Получение некоторой информации о организации или пользователе с сервиса GitHub по юзернейму' },
-      { name: `${prefix}githubrepos `, blocked: false, category: 'github', description: 'Получение 12 открытых репозиториев организации или пользователя с сервиса GitHub по юзернейму' },
 
       { name: `${prefix}redguyinfo `, blocked: true, category: 'other', description: 'Информация о пользователе redguy.ru' },
       { name: `${prefix}short `, blocked: false, category: 'other', description: 'Сократить ссылку' },
